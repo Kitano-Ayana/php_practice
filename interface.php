@@ -50,8 +50,15 @@ class BuyProduct {
     }
 }
 
+//Cashクラスのインスタンス化
 $paymentType = new Cash();
+
+//BuyProductクラスのインスタンス化
 $buyProduct = new BuyProduct();
+
+//Cashクラスのインスタンス化を引数に、pay関数を実行→CashクラスのpaymentProcess関数が実行
 $buyProduct->pay($paymentType);
-$buyProduct->onlinePay($paymentType);
+
+//test
+
 
